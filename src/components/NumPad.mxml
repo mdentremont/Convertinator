@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:VGroup xmlns:fx="http://ns.adobe.com/mxml/2009"
+		  xmlns:s="library://ns.adobe.com/flex/spark"
+		  xmlns:mx="library://ns.adobe.com/flex/mx"
+		  xmlns:components="components.*"
+		  width="350" height="100%" gap="2">
+	<fx:Declarations>
+		<!-- Place non-visual elements (e.g., services, value objects) here -->
+	</fx:Declarations>
+	<fx:Metadata>
+		[Event(name="textChanged", type="flash.events.Event")]
+	</fx:Metadata>
+	<fx:Script>
+		<![CDATA[
+			import events.NumpadEvent;
+			
+			import mx.collections.ArrayCollection;
+			
+			import objects.Unit;
+			
+			import qnx.dialog.DialogAlign;
+			import qnx.dialog.PopupList;
+			import qnx.display.IowWindow;
+			
+			import spark.components.List;
+			
+			[Bindable]
+			public var _textBoxText:String = "";
+			private var _units:ArrayCollection;
+			private var _selectedIndex:int;
+
+			private function keyPressedHandler(event:NumpadEvent):void {
+				if (event.key == "") {
+					if (_textBoxText.length != 0) {
+						_textBoxText = _textBoxText.substr(0, _textBoxText.length - 1);
+					}	
+				} else if (event.key == ".") {
+					if (_textBoxText.indexOf(".") == -1) {
+						_textBoxText += event.key;
+					}
+				} else if (event.key == "C") {
+					_textBoxText = "";
+				} else if (event.key == "+/-") {
+					if (_textBoxText != null) {
+						if (_textBoxText.charAt(0) != "-") {
+							_textBoxText = "-" + _textBoxText;
+						} else {
+							_textBoxText = _textBoxText.slice(1);
+						}
+					}
+				} else if (_textBoxText.length < 32) {
+					// Maintain a maximum size
+					_textBoxText += event.key;
+				}
+				dispatchEvent(new Event("textChanged"));
+			}
+			
+			protected function newUnitSelected(event:Event):void {
+				var popup:PopupList = event.target as PopupList;
+				
+				// Only handle the "OK" button
+				if (popup.selectedIndex == 0) {
+					selectedIndex = popup.selectedIndices[0];
+					selectedType.label = (units[selectedIndex] as Unit).type;
+					dispatchEvent(new Event("textChanged"));
+				}
+			}
+			
+			public function popupChangeUnitType(event:Event):void {
+				var popup:PopupList = new PopupList;
+				popup.align = DialogAlign.CENTER;
+				popup.title = "Choose New Base Unit";
+				var a:Array = new Array();
+				for each (var u:Unit in units) {
+					a.push(u.type);
+				}
+				popup.items = a;
+				
+				var selected:Array = new Array();
+				selected.push(selectedIndex);
+				popup.selectedIndices = selected;
+				popup.scrollToIndex = selectedIndex;				
+				
+				popup.multiSelect = false;
+				popup.addButton("OK");
+				popup.addButton("Cancel");
+				popup.addEventListener(Event.SELECT, newUnitSelected);
+				popup.show(IowWindow.getAirWindow().group);
+			}
+			
+			
+			public function get units():ArrayCollection {
+				return _units;
+			}
+			
+			public function set units(arr:ArrayCollection):void {
+				_units = arr;
+				_selectedIndex = 0;
+			}
+			
+			public function get selectedIndex():int {
+				return _selectedIndex;
+			}
+			
+			public function set selectedIndex(i:int):void {
+				_selectedIndex = i;
+			}
+			
+			public function get textBoxText():String {
+				return _textBoxText;
+			}
+			
+			public function set textBoxText(text:String):void {
+				_textBoxText = text;
+			}
+		]]>
+	</fx:Script>
+	<s:BorderContainer width="100%" height="80"
+					   borderStyle="inset" borderWeight="5" dropShadowVisible="true" textAlign="center">
+		<s:RichText id="textBox" text="{_textBoxText}" width="100%" height="100%"
+					verticalAlign="top" textAlign="left"
+					paddingLeft="15" paddingRight="15" paddingTop="5" paddingBottom="5"
+					fontWeight="bold" fontSize="32" fontFamily="Arial" color="0x000000f"/>
+	</s:BorderContainer>
+	<s:HGroup left="0" y="80" height="40" width="350" verticalAlign="middle">
+		<s:Button id="selectedType" width="100%" height="100%" click="popupChangeUnitType(event)"/>
+		<!--
+		<s:DropDownList id="selectedType" selectedIndex="0" height="100%" width="100%" change='dispatchEvent(new Event("textChanged"));'>
+			<s:layout>
+				<s:VerticalLayout horizontalAlign="contentJustify" requestedRowCount="10"/>
+			</s:layout>
+		</s:DropDownList>
+		-->
+	</s:HGroup>
+	<s:HGroup width="100%" height="100%" gap="2">
+		<components:Key label="+/-" width="100%" height="100%" fontSize="24" keyPressed="keyPressedHandler(event)"/>
+		<components:Key label="C" width="100%" height="100%" fontSize="24" keyPressed="keyPressedHandler(event)"/>
+		<components:Key width="100%" height="100%" label="" fontSize="24"
+						icon="@Embed(source='../Arrow.png')" keyPressed="keyPressedHandler(event)"/>
+	</s:HGroup>
+	<s:HGroup width="100%" height="100%" gap="2">
+		<components:Key label="7" width="100%" height="100%" fontSize="24" keyPressed="keyPressedHandler(event)"/>
+		<components:Key label="8" width="100%" height="100%" fontSize="24" keyPressed="keyPressedHandler(event)"/>
+		<components:Key label="9" width="100%" height="100%" fontSize="24" keyPressed="keyPressedHandler(event)"/>
+	</s:HGroup>
+	<s:HGroup width="100%" height="100%" gap="2">
+		<components:Key label="4" width="100%" height="100%" fontSize="24" keyPressed="keyPressedHandler(event)"/>
+		<components:Key label="5" width="100%" height="100%" fontSize="24" keyPressed="keyPressedHandler(event)"/>
+		<components:Key label="6" width="100%" height="100%" fontSize="24" keyPressed="keyPressedHandler(event)"/>
+	</s:HGroup>
+	<s:HGroup width="100%" height="100%" gap="2">
+		<components:Key label="1" width="100%" height="100%" fontSize="24" keyPressed="keyPressedHandler(event)"/>
+		<components:Key label="2" width="100%" height="100%" fontSize="24" keyPressed="keyPressedHandler(event)"/>
+		<components:Key label="3" width="100%" height="100%" fontSize="24" keyPressed="keyPressedHandler(event)"/>
+	</s:HGroup>
+	<s:HGroup width="100%" height="100%" gap="2">
+		<components:Key label="0" width="66.666666666%" height="100%" fontSize="24" keyPressed="keyPressedHandler(event)"/>
+		<components:Key label="." width="33.333333333%" height="100%" fontSize="24" keyPressed="keyPressedHandler(event)"/>
+	</s:HGroup>
+</s:VGroup>

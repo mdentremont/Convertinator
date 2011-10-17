@@ -1,0 +1,529 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Exchange Rates For US Dollar</title>
+    <link>http://themoneyconverter.com/USD/Default.aspx</link>
+    <description>The latest currency exchange rates for US Dollar</description>
+    <lastBuildDate>Wed, 07 Sep 2011 15:50:26 GMT</lastBuildDate>
+    <language>en-us</language>
+    <copyright>Copyright: (C) The Money Converter, see http://themoneyconverter.com/</copyright>
+    <docs>http://themoneyconverter.com/RSSFeeds.aspx</docs>
+    <ttl>15</ttl>
+    <image>
+      <title>Exchange Rates For US Dollar</title>
+      <url>http://themoneyconverter.com/images/artwork/TheMoneyConveD01aR02aP01ZL_sml.jpg</url>
+      <link>http://themoneyconverter.com/USD/Default.aspx</link>
+    </image>
+    <item>
+      <title>AED/USD</title>
+      <link>http://themoneyconverter.com/USD/AED.aspx</link>
+      <guid>9f846d12-805c-4015-acb1-8fb66ae86c99</guid>
+      <pubDate>Wed, 07 Sep 2011 15:50:26 GMT</pubDate>
+      <description>1 US Dollar = 3.6725 United Arab Emirates Dirham</description>
+      <category>Middle East</category>
+    </item>
+    <item>
+      <title>ARS/USD</title>
+      <link>http://themoneyconverter.com/USD/ARS.aspx</link>
+      <guid>838fddd1-840b-4d6f-9143-04e9edb08ef6</guid>
+      <pubDate>Wed, 07 Sep 2011 15:50:26 GMT</pubDate>
+      <description>1 US Dollar = 4.20135 Argentine Peso</description>
+      <category>South America</category>
+    </item>
+    <item>
+      <title>AUD/USD</title>
+      <link>http://themoneyconverter.com/USD/AUD.aspx</link>
+      <guid>4609fcae-1bb9-4cd1-a5ce-899b49e7fe3c</guid>
+      <pubDate>Wed, 07 Sep 2011 15:50:26 GMT</pubDate>
+      <description>1 US Dollar = 0.94067 Australian Dollar</description>
+      <category>Oceania</category>
+    </item>
+    <item>
+      <title>BBD/USD</title>
+      <link>http://themoneyconverter.com/USD/BBD.aspx</link>
+      <guid>d25229b9-8ace-4bae-b049-3db611af57e9</guid>
+      <pubDate>Wed, 07 Sep 2011 15:50:26 GMT</pubDate>
+      <description>1 US Dollar = 2.00 Barbadian Dollar</description>
+      <category>North America</category>
+    </item>
+    <item>
+      <title>BHD/USD</title>
+      <link>http://themoneyconverter.com/USD/BHD.aspx</link>
+      <guid>e113a8e5-4919-4900-b58b-25cd4e0e8d58</guid>
+      <pubDate>Wed, 07 Sep 2011 15:50:26 GMT</pubDate>
+      <description>1 US Dollar = 0.376 Bahraini Dinar</description>
+      <category>Middle East</category>
+    </item>
+    <item>
+      <title>BOB/USD</title>
+      <link>http://themoneyconverter.com/USD/BOB.aspx</link>
+      <guid>c5e82aee-9f08-4f89-bff7-ddfe105b6a76</guid>
+      <pubDate>Wed, 07 Sep 2011 15:50:26 GMT</pubDate>
+      <description>1 US Dollar = 6.91020 Bolivian Boliviano</description>
+      <category>South America</category>
+    </item>
+    <item>
+      <title>BRL/USD</title>
+      <link>http://themoneyconverter.com/USD/BRL.aspx</link>
+      <guid>03e932ff-3595-48df-bf6f-ae4ddbec079a</guid>
+      <pubDate>Wed, 07 Sep 2011 15:50:26 GMT</pubDate>
+      <description>1 US Dollar = 1.65258 Brazilian Real</description>
+      <category>South America</category>
+    </item>
+    <item>
+      <title>CAD/USD</title>
+      <link>http://themoneyconverter.com/USD/CAD.aspx</link>
+      <guid>ea3f2a3a-6e5d-404a-ad6b-69d1fb9cf267</guid>
+      <pubDate>Wed, 07 Sep 2011 15:50:26 GMT</pubDate>
+      <description>1 US Dollar = 0.98700 Canadian Dollar</description>
+      <category>North America</category>
+    </item>
+    <item>
+      <title>CHF/USD</title>
+      <link>http://themoneyconverter.com/USD/CHF.aspx</link>
+      <guid>1414522d-5e1b-452b-8d15-5e07bc36dc69</guid>
+      <pubDate>Wed, 07 Sep 2011 15:50:26 GMT</pubDate>
+      <description>1 US Dollar = 0.85826 Swiss Franc</description>
+      <category>Europe</category>
+    </item>
+    <item>
+      <title>CLP/USD</title>
+      <link>http://themoneyconverter.com/USD/CLP.aspx</link>
+      <guid>5a1f6e5d-0998-4c45-81a5-bf58abfa4ab2</guid>
+      <pubDate>Wed, 07 Sep 2011 15:50:26 GMT</pubDate>
+      <description>1 US Dollar = 462.35908 Chilean Peso</description>
+      <category>South America</category>
+    </item>
+    <item>
+      <title>CNY/USD</title>
+      <link>http://themoneyconverter.com/USD/CNY.aspx</link>
+      <guid>58d480ae-e950-4cfa-b171-6e6c56d7026c</guid>
+      <pubDate>Wed, 07 Sep 2011 15:50:26 GMT</pubDate>
+      <description>1 US Dollar = 6.38544 Chinese Yuan</description>
+      <category>Asia</category>
+    </item>
+    <item>
+      <title>COP/USD</title>
+      <link>http://themoneyconverter.com/USD/COP.aspx</link>
+      <guid>da116275-e150-49a4-8ba2-abdb586aedfc</guid>
+      <pubDate>Wed, 07 Sep 2011 15:50:26 GMT</pubDate>
+      <description>1 US Dollar = 1788.42259 Colombian Peso</description>
+      <category>South America</category>
+    </item>
+    <item>
+      <title>CZK/USD</title>
+      <link>http://themoneyconverter.com/USD/CZK.aspx</link>
+      <guid>2f8c15d8-f2e1-4168-acce-67674f2be321</guid>
+      <pubDate>Wed, 07 Sep 2011 15:50:26 GMT</pubDate>
+      <description>1 US Dollar = 17.37684 Czech Koruna</description>
+      <category>Europe</category>
+    </item>
+    <item>
+      <title>DKK/USD</title>
+      <link>http://themoneyconverter.com/USD/DKK.aspx</link>
+      <guid>28712e9e-6885-4b6c-89df-1623e0502148</guid>
+      <pubDate>Wed, 07 Sep 2011 15:50:26 GMT</pubDate>
+      <description>1 US Dollar = 5.30045 Danish Krone</description>
+      <category>Europe</category>
+    </item>
+    <item>
+      <title>EGP/USD</title>
+      <link>http://themoneyconverter.com/USD/EGP.aspx</link>
+      <guid>4e45051b-cf56-4b92-a473-98aabae9eab8</guid>
+      <pubDate>Wed, 07 Sep 2011 15:50:26 GMT</pubDate>
+      <description>1 US Dollar = 5.97258 Egyptian Pound</description>
+      <category>Africa</category>
+    </item>
+    <item>
+      <title>EUR/USD</title>
+      <link>http://themoneyconverter.com/USD/EUR.aspx</link>
+      <guid>30139dcc-7721-4d31-8bda-c6386562207c</guid>
+      <pubDate>Wed, 07 Sep 2011 15:50:26 GMT</pubDate>
+      <description>1 US Dollar = 0.71048 Euro</description>
+      <category>Europe</category>
+    </item>
+    <item>
+      <title>GBP/USD</title>
+      <link>http://themoneyconverter.com/USD/GBP.aspx</link>
+      <guid>7f0868c9-84f8-4996-8806-05248cde3d06</guid>
+      <pubDate>Wed, 07 Sep 2011 15:50:26 GMT</pubDate>
+      <description>1 US Dollar = 0.62636 British Pound Sterling</description>
+      <category>Europe</category>
+    </item>
+    <item>
+      <title>HKD/USD</title>
+      <link>http://themoneyconverter.com/USD/HKD.aspx</link>
+      <guid>e56d5b99-7e19-4798-a74c-d87db7d2a46d</guid>
+      <pubDate>Wed, 07 Sep 2011 15:50:26 GMT</pubDate>
+      <description>1 US Dollar = 7.75 Hong Kong Dollar</description>
+      <category>Asia</category>
+    </item>
+    <item>
+      <title>HUF/USD</title>
+      <link>http://themoneyconverter.com/USD/HUF.aspx</link>
+      <guid>9c2b262a-7538-40df-8de4-eeff6ac5fb5a</guid>
+      <pubDate>Wed, 07 Sep 2011 15:50:26 GMT</pubDate>
+      <description>1 US Dollar = 196.28171 Hungarian Forint</description>
+      <category>Europe</category>
+    </item>
+    <item>
+      <title>IDR/USD</title>
+      <link>http://themoneyconverter.com/USD/IDR.aspx</link>
+      <guid>08e1b39f-0a27-477d-87e9-8e8283cb35f8</guid>
+      <pubDate>Wed, 07 Sep 2011 15:50:26 GMT</pubDate>
+      <description>1 US Dollar = 8533.22877 Indonesian Rupiah</description>
+      <category>Asia</category>
+    </item>
+    <item>
+      <title>ILS/USD</title>
+      <link>http://themoneyconverter.com/USD/ILS.aspx</link>
+      <guid>270e6b11-3d52-4ed1-b7eb-c0a8004d2149</guid>
+      <pubDate>Wed, 07 Sep 2011 15:50:26 GMT</pubDate>
+      <description>1 US Dollar = 3.67382 Israeli Sheqel</description>
+      <category>Middle East</category>
+    </item>
+    <item>
+      <title>INR/USD</title>
+      <link>http://themoneyconverter.com/USD/INR.aspx</link>
+      <guid>e9e6df8a-ee5a-4ff1-9f59-8d9e7407ee9d</guid>
+      <pubDate>Wed, 07 Sep 2011 15:50:26 GMT</pubDate>
+      <description>1 US Dollar = 46.00462 Indian Rupee</description>
+      <category>Asia</category>
+    </item>
+    <item>
+      <title>ISK/USD</title>
+      <link>http://themoneyconverter.com/USD/ISK.aspx</link>
+      <guid>eb599424-e9ad-40bd-a70d-536f226d15c4</guid>
+      <pubDate>Wed, 07 Sep 2011 15:50:26 GMT</pubDate>
+      <description>1 US Dollar = 115.68306 Icelandic Krona</description>
+      <category>Europe</category>
+    </item>
+    <item>
+      <title>JMD/USD</title>
+      <link>http://themoneyconverter.com/USD/JMD.aspx</link>
+      <guid>945ce175-5470-400c-8558-05da686fb0b8</guid>
+      <pubDate>Wed, 07 Sep 2011 15:50:26 GMT</pubDate>
+      <description>1 US Dollar = 85.43964 Jamaican Dollar</description>
+      <category>North America</category>
+    </item>
+    <item>
+      <title>JOD/USD</title>
+      <link>http://themoneyconverter.com/USD/JOD.aspx</link>
+      <guid>b0af65f1-e6a1-4adc-8975-6fabd71cdc9d</guid>
+      <pubDate>Wed, 07 Sep 2011 15:50:26 GMT</pubDate>
+      <description>1 US Dollar = 0.709 Jordanian Dinar</description>
+      <category>Middle East</category>
+    </item>
+    <item>
+      <title>JPY/USD</title>
+      <link>http://themoneyconverter.com/USD/JPY.aspx</link>
+      <guid>7ab309d0-567d-48cb-ab42-7b183c6d0dbd</guid>
+      <pubDate>Wed, 07 Sep 2011 15:50:26 GMT</pubDate>
+      <description>1 US Dollar = 77.22139 Japanese Yen</description>
+      <category>Asia</category>
+    </item>
+    <item>
+      <title>KES/USD</title>
+      <link>http://themoneyconverter.com/USD/KES.aspx</link>
+      <guid>061f3019-845b-4888-994b-84491b4a6720</guid>
+      <pubDate>Wed, 07 Sep 2011 15:50:26 GMT</pubDate>
+      <description>1 US Dollar = 93.80831 Kenyan Shilling</description>
+      <category>Africa</category>
+    </item>
+    <item>
+      <title>KRW/USD</title>
+      <link>http://themoneyconverter.com/USD/KRW.aspx</link>
+      <guid>89662456-c9d0-4930-99f3-6bce26c029cc</guid>
+      <pubDate>Wed, 07 Sep 2011 15:50:26 GMT</pubDate>
+      <description>1 US Dollar = 1069.23290 South Korean Won</description>
+      <category>Asia</category>
+    </item>
+    <item>
+      <title>KWD/USD</title>
+      <link>http://themoneyconverter.com/USD/KWD.aspx</link>
+      <guid>4da8f552-f29b-4c60-9f30-b306c04c143a</guid>
+      <pubDate>Wed, 07 Sep 2011 15:50:26 GMT</pubDate>
+      <description>1 US Dollar = 0.27346 Kuwaiti Dinar</description>
+      <category>Middle East</category>
+    </item>
+    <item>
+      <title>LBP/USD</title>
+      <link>http://themoneyconverter.com/USD/LBP.aspx</link>
+      <guid>e1c3d34d-ff8d-4f00-8435-b930b9ec8fae</guid>
+      <pubDate>Wed, 07 Sep 2011 15:50:26 GMT</pubDate>
+      <description>1 US Dollar = 1507.5 Lebanese Pound</description>
+      <category>Middle East</category>
+    </item>
+    <item>
+      <title>LKR/USD</title>
+      <link>http://themoneyconverter.com/USD/LKR.aspx</link>
+      <guid>453aa71a-c735-4ded-a485-d854df558413</guid>
+      <pubDate>Wed, 07 Sep 2011 15:50:26 GMT</pubDate>
+      <description>1 US Dollar = 109.83439 Sri Lankan Rupee</description>
+      <category>Asia</category>
+    </item>
+    <item>
+      <title>LTL/USD</title>
+      <link>http://themoneyconverter.com/USD/LTL.aspx</link>
+      <guid>34c84ee6-1784-430c-a57c-6cfac8a3a4b1</guid>
+      <pubDate>Wed, 07 Sep 2011 15:50:26 GMT</pubDate>
+      <description>1 US Dollar = 2.45314 Lithuanian Litas</description>
+      <category>Europe</category>
+    </item>
+    <item>
+      <title>LVL/USD</title>
+      <link>http://themoneyconverter.com/USD/LVL.aspx</link>
+      <guid>db881d84-6ba0-4a2c-aa25-60d4222b14d3</guid>
+      <pubDate>Wed, 07 Sep 2011 15:50:26 GMT</pubDate>
+      <description>1 US Dollar = 0.49933 Latvian Lats</description>
+      <category>Europe</category>
+    </item>
+    <item>
+      <title>MAD/USD</title>
+      <link>http://themoneyconverter.com/USD/MAD.aspx</link>
+      <guid>bb95b685-8461-4016-bf90-385a3f5b224a</guid>
+      <pubDate>Wed, 07 Sep 2011 15:50:26 GMT</pubDate>
+      <description>1 US Dollar = 8.02494 Moroccan Dirham</description>
+      <category>Africa</category>
+    </item>
+    <item>
+      <title>MXN/USD</title>
+      <link>http://themoneyconverter.com/USD/MXN.aspx</link>
+      <guid>a9ce21d1-e984-46b8-b1da-32c399e6d525</guid>
+      <pubDate>Wed, 07 Sep 2011 15:50:26 GMT</pubDate>
+      <description>1 US Dollar = 12.45009 Mexican Peso</description>
+      <category>North America</category>
+    </item>
+    <item>
+      <title>MYR/USD</title>
+      <link>http://themoneyconverter.com/USD/MYR.aspx</link>
+      <guid>dd6c7ec7-a770-400f-87f0-31841cb5056c</guid>
+      <pubDate>Wed, 07 Sep 2011 15:50:26 GMT</pubDate>
+      <description>1 US Dollar = 2.98380 Malaysian Ringgit</description>
+      <category>Asia</category>
+    </item>
+    <item>
+      <title>NAD/USD</title>
+      <link>http://themoneyconverter.com/USD/NAD.aspx</link>
+      <guid>a2a9b86a-0e4d-4e04-a912-ded99d19b911</guid>
+      <pubDate>Wed, 07 Sep 2011 15:50:26 GMT</pubDate>
+      <description>1 US Dollar = 7.15091 Namibian Dollar</description>
+      <category>Africa</category>
+    </item>
+    <item>
+      <title>NGN/USD</title>
+      <link>http://themoneyconverter.com/USD/NGN.aspx</link>
+      <guid>b5f3e85d-570d-4da9-97b0-c233ccb3ce66</guid>
+      <pubDate>Wed, 07 Sep 2011 15:50:26 GMT</pubDate>
+      <description>1 US Dollar = 156.01357 Nigerian Naira</description>
+      <category>Africa</category>
+    </item>
+    <item>
+      <title>NOK/USD</title>
+      <link>http://themoneyconverter.com/USD/NOK.aspx</link>
+      <guid>216208b8-bfcd-4aac-8916-e2da2eb777d6</guid>
+      <pubDate>Wed, 07 Sep 2011 15:50:26 GMT</pubDate>
+      <description>1 US Dollar = 5.38174 Norwegian Krone</description>
+      <category>Europe</category>
+    </item>
+    <item>
+      <title>NPR/USD</title>
+      <link>http://themoneyconverter.com/USD/NPR.aspx</link>
+      <guid>8b6efa70-58d4-41cb-a571-78b77271d115</guid>
+      <pubDate>Wed, 07 Sep 2011 15:50:26 GMT</pubDate>
+      <description>1 US Dollar = 73.60739 Nepalese Rupee</description>
+      <category>Asia</category>
+    </item>
+    <item>
+      <title>NZD/USD</title>
+      <link>http://themoneyconverter.com/USD/NZD.aspx</link>
+      <guid>a0626159-556c-4eee-8c14-9f432e2065f4</guid>
+      <pubDate>Wed, 07 Sep 2011 15:50:26 GMT</pubDate>
+      <description>1 US Dollar = 1.20710 New Zealand Dollar</description>
+      <category>Oceania</category>
+    </item>
+    <item>
+      <title>OMR/USD</title>
+      <link>http://themoneyconverter.com/USD/OMR.aspx</link>
+      <guid>0b10bf97-cf23-47b1-bf6d-a2fbcd9d9990</guid>
+      <pubDate>Wed, 07 Sep 2011 15:50:26 GMT</pubDate>
+      <description>1 US Dollar = 0.38450 Omani Rial</description>
+      <category>Middle East</category>
+    </item>
+    <item>
+      <title>PAB/USD</title>
+      <link>http://themoneyconverter.com/USD/PAB.aspx</link>
+      <guid>dd853f79-f20a-4ca6-bd7c-9f12e8576a2c</guid>
+      <pubDate>Wed, 07 Sep 2011 15:50:26 GMT</pubDate>
+      <description>1 US Dollar = 1 Panamanian Balboa</description>
+      <category>North America</category>
+    </item>
+    <item>
+      <title>PEN/USD</title>
+      <link>http://themoneyconverter.com/USD/PEN.aspx</link>
+      <guid>5497c058-06d9-4d91-9034-e7372b571f8f</guid>
+      <pubDate>Wed, 07 Sep 2011 15:50:26 GMT</pubDate>
+      <description>1 US Dollar = 2.72938 Peru Nuevo Sol</description>
+      <category>South America</category>
+    </item>
+    <item>
+      <title>PHP/USD</title>
+      <link>http://themoneyconverter.com/USD/PHP.aspx</link>
+      <guid>772f83f1-1042-42e4-83df-3c039fdc0288</guid>
+      <pubDate>Wed, 07 Sep 2011 15:50:26 GMT</pubDate>
+      <description>1 US Dollar = 42.28988 Philippine Peso</description>
+      <category>Asia</category>
+    </item>
+    <item>
+      <title>PKR/USD</title>
+      <link>http://themoneyconverter.com/USD/PKR.aspx</link>
+      <guid>38b0f5ea-6049-4349-85e9-248df7b62409</guid>
+      <pubDate>Wed, 07 Sep 2011 15:50:26 GMT</pubDate>
+      <description>1 US Dollar = 87.53897 Pakistani Rupee</description>
+      <category>Asia</category>
+    </item>
+    <item>
+      <title>PLN/USD</title>
+      <link>http://themoneyconverter.com/USD/PLN.aspx</link>
+      <guid>7c4ffac6-6cda-46d7-bf9f-50768a2e5687</guid>
+      <pubDate>Wed, 07 Sep 2011 15:50:26 GMT</pubDate>
+      <description>1 US Dollar = 2.99943 Polish Zloty</description>
+      <category>Europe</category>
+    </item>
+    <item>
+      <title>QAR/USD</title>
+      <link>http://themoneyconverter.com/USD/QAR.aspx</link>
+      <guid>a429114c-1d46-425e-b578-c9e33059282b</guid>
+      <pubDate>Wed, 07 Sep 2011 15:50:26 GMT</pubDate>
+      <description>1 US Dollar = 3.64 Qatari Riyal</description>
+      <category>Middle East</category>
+    </item>
+    <item>
+      <title>RON/USD</title>
+      <link>http://themoneyconverter.com/USD/RON.aspx</link>
+      <guid>cd05d1b0-e69f-47d3-afa8-55b1c4c2ddfa</guid>
+      <pubDate>Wed, 07 Sep 2011 15:50:26 GMT</pubDate>
+      <description>1 US Dollar = 3.00945 Romanian Leu</description>
+      <category>Europe</category>
+    </item>
+    <item>
+      <title>RUB/USD</title>
+      <link>http://themoneyconverter.com/USD/RUB.aspx</link>
+      <guid>5f4c8f3c-a31b-4354-bcff-99450dfde133</guid>
+      <pubDate>Wed, 07 Sep 2011 15:50:26 GMT</pubDate>
+      <description>1 US Dollar = 29.48043 Russian Rouble</description>
+      <category>Asia</category>
+    </item>
+    <item>
+      <title>SAR/USD</title>
+      <link>http://themoneyconverter.com/USD/SAR.aspx</link>
+      <guid>5c0b76e4-26bc-45fd-a3e5-db792444b125</guid>
+      <pubDate>Wed, 07 Sep 2011 15:50:26 GMT</pubDate>
+      <description>1 US Dollar = 3.75 Saudi Riyal</description>
+      <category>Middle East</category>
+    </item>
+    <item>
+      <title>SEK/USD</title>
+      <link>http://themoneyconverter.com/USD/SEK.aspx</link>
+      <guid>fb10f957-2239-4f04-b7a6-9be8b5868ebe</guid>
+      <pubDate>Wed, 07 Sep 2011 15:50:26 GMT</pubDate>
+      <description>1 US Dollar = 6.38728 Swedish Krona</description>
+      <category>Europe</category>
+    </item>
+    <item>
+      <title>SGD/USD</title>
+      <link>http://themoneyconverter.com/USD/SGD.aspx</link>
+      <guid>c4d92e18-7cf4-437e-bc30-1147098a1696</guid>
+      <pubDate>Wed, 07 Sep 2011 15:50:26 GMT</pubDate>
+      <description>1 US Dollar = 1.20917 Singapore Dollar</description>
+      <category>Asia</category>
+    </item>
+    <item>
+      <title>THB/USD</title>
+      <link>http://themoneyconverter.com/USD/THB.aspx</link>
+      <guid>d323c23b-e83f-4de4-92c5-31341a59a32f</guid>
+      <pubDate>Wed, 07 Sep 2011 15:50:26 GMT</pubDate>
+      <description>1 US Dollar = 29.98778 Thai Baht</description>
+      <category>Asia</category>
+    </item>
+    <item>
+      <title>TRY/USD</title>
+      <link>http://themoneyconverter.com/USD/TRY.aspx</link>
+      <guid>5b39106c-34d6-4d41-a32f-ede5ecb0f13e</guid>
+      <pubDate>Wed, 07 Sep 2011 15:50:26 GMT</pubDate>
+      <description>1 US Dollar = 1.76185 Turkish Lira</description>
+      <category>Middle East</category>
+    </item>
+    <item>
+      <title>TWD/USD</title>
+      <link>http://themoneyconverter.com/USD/TWD.aspx</link>
+      <guid>f12d41bd-27bc-4046-9efc-4e4db4f65ed2</guid>
+      <pubDate>Wed, 07 Sep 2011 15:50:26 GMT</pubDate>
+      <description>1 US Dollar = 29.14302 Taiwanese Dollar</description>
+      <category>Asia</category>
+    </item>
+    <item>
+      <title>UAH/USD</title>
+      <link>http://themoneyconverter.com/USD/UAH.aspx</link>
+      <guid>e3434d48-2ed8-43c8-9705-a648826ff54c</guid>
+      <pubDate>Wed, 07 Sep 2011 15:50:26 GMT</pubDate>
+      <description>1 US Dollar = 7.99311 Ukraine Hryvnia</description>
+      <category>Europe</category>
+    </item>
+    <item>
+      <title>UYU/USD</title>
+      <link>http://themoneyconverter.com/USD/UYU.aspx</link>
+      <guid>89fc1ae8-a5e8-48f5-a936-a21dae4d1701</guid>
+      <pubDate>Wed, 07 Sep 2011 15:50:26 GMT</pubDate>
+      <description>1 US Dollar = 18.79552 Uruguayan Peso</description>
+      <category>South America</category>
+    </item>
+    <item>
+      <title>VEF/USD</title>
+      <link>http://themoneyconverter.com/USD/VEF.aspx</link>
+      <guid>d760a5f0-0d9d-41d2-84a9-96f92480307d</guid>
+      <pubDate>Wed, 07 Sep 2011 15:50:26 GMT</pubDate>
+      <description>1 US Dollar = 4.3 Venezuelan Bolivar</description>
+      <category>South America</category>
+    </item>
+    <item>
+      <title>VND/USD</title>
+      <link>http://themoneyconverter.com/USD/VND.aspx</link>
+      <guid>6e3be0bd-bee8-4679-89aa-7e321ca466f6</guid>
+      <pubDate>Wed, 07 Sep 2011 15:50:26 GMT</pubDate>
+      <description>1 US Dollar = 20830.00341 Vietnamese Dong</description>
+      <category>Asia</category>
+    </item>
+    <item>
+      <title>XAF/USD</title>
+      <link>http://themoneyconverter.com/USD/XAF.aspx</link>
+      <guid>703fab5a-36fa-4acd-85f9-cedf10a46221</guid>
+      <pubDate>Wed, 07 Sep 2011 15:50:26 GMT</pubDate>
+      <description>1 US Dollar = 466.04405 Central African CFA franc</description>
+      <category>Africa</category>
+    </item>
+    <item>
+      <title>XCD/USD</title>
+      <link>http://themoneyconverter.com/USD/XCD.aspx</link>
+      <guid>d437364b-7526-416d-adbb-1d215828cfe1</guid>
+      <pubDate>Wed, 07 Sep 2011 15:50:26 GMT</pubDate>
+      <description>1 US Dollar = 2.7 East Caribbean Dollar</description>
+      <category>South America</category>
+    </item>
+    <item>
+      <title>XOF/USD</title>
+      <link>http://themoneyconverter.com/USD/XOF.aspx</link>
+      <guid>7df90bb7-b497-40f3-983e-173d16d3b37e</guid>
+      <pubDate>Wed, 07 Sep 2011 15:50:26 GMT</pubDate>
+      <description>1 US Dollar = 466.04405 West African CFA franc</description>
+      <category>Africa</category>
+    </item>
+    <item>
+      <title>ZAR/USD</title>
+      <link>http://themoneyconverter.com/USD/ZAR.aspx</link>
+      <guid>c73ddb16-4c16-44a8-990f-cbfb6c70e29d</guid>
+      <pubDate>Wed, 07 Sep 2011 15:50:26 GMT</pubDate>
+      <description>1 US Dollar = 7.15091 South African Rand</description>
+      <category>Africa</category>
+    </item>
+  </channel>
+</rss>

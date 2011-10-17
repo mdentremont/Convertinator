@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<qnx>
+   <initialWindow>
+      <systemChrome>none</systemChrome>
+      <transparent>false</transparent>
+   </initialWindow>
+
+   <author>Student</author>
+   <authorId>gYAAgAxMeBelNLJlylCqf7U2HKQ</authorId>
+   <publisher>Student</publisher>
+   <category>core.utilities</category>
+
+   <icon>
+      <image>Convertinator.png</image>
+   </icon>
+
+   <action>access_internet</action>
+   <platformVersion>1.0.0.0</platformVersion>
+   <permission>access_internet</permission>
+</qnx>
