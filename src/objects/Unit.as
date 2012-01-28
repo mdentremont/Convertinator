@@ -1,6 +1,17 @@
 package objects
 {
 	[Bindable]
+	/**
+	 * Units are used to make all the conversions. Each unit is defined
+	 * in relation to the base unit.
+	 * 
+	 * Ex: If meter is the base unit, its value will be 1, and everything else
+	 * will be determined as a factor of one. This means that the kilometer's
+	 * value will be .001, since 1 meter is .001 kilometers.
+	 * 
+	 * All unit categories use this method except for temperatures, which are
+	 * calculated using a formula.
+	 */
 	public class Unit
 	{
 		private var _type:String;

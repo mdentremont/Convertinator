@@ -11,6 +11,9 @@ package events
 			_key = key;
 		}
 		
+		/**
+		 * Return the specific NumPad key which was pressed.
+		 */
 		public function get key():String {
 			return _key;
 		}
