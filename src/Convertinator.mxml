@@ -5,8 +5,10 @@
 			   xmlns:components="components.*"
 			   xmlns:data="qnx.ui.data.*"
 			   xmlns:objects="objects.*"
-			   width="1024" height="600"
-			   creationComplete="initializeApp()">
+			   creationComplete="initializeApp()"
+			   height="600"
+			   width="1024"
+			   >
 	<fx:Style source="Convertinator.css"/>
 	<fx:Script source="Convertinator.as"/>
 	<fx:Declarations>
@@ -29,21 +31,32 @@
 					   textChanged="updateConversions(event)"
 					   y="80" 
 					   />
-	<s:DataGrid id="dataGrid" 
+	<s:DataGrid id="dataGrid"
 				dataProvider="{unitBar.data.list}"
 				height="100%"
+				resizableColumns="false"
 				right="0" 
 				width="660"
 				y="80"
 				>
 		<s:columns>
 			<s:ArrayList>
-				<s:GridColumn dataField="type" headerText="Unit" />
+				<s:GridColumn dataField="type"
+							  headerText="Unit"
+							  width="{dataGrid.width * .3}"
+							  />
 				<s:GridColumn id="convertedColumn"
 							  dataField="convertedValue"
 							  headerText="Value"
 							  labelFunction="convertedLabelFunction"
-							  />
+							  width="{dataGrid.width * .69}"
+							  >
+					<s:itemRenderer>
+						<fx:Component>
+							<s:DefaultGridItemRenderer textAlign="right" />
+						</fx:Component>
+					</s:itemRenderer>
+				</s:GridColumn>
 			</s:ArrayList>
 		</s:columns>
 	</s:DataGrid>
