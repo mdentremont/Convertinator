@@ -91,7 +91,7 @@
 					</s:dataProvider>
 				</s:DropDownList>
 			</s:HGroup>
-			<s:Button click="Data.fetchCurrencyData(true)"
+			<s:Button click="Data.fetchCurrencyData()"
 					  height="50" 
 					  label="Update Data Currency Now"
 					  />

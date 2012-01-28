@@ -4,6 +4,17 @@ package objects
 
 	public class UnitData
 	{
+		public static const AREA:String = "Area";
+		public static const COOKING:String = "Cooking";
+		public static const CURRENCY:String = "Currency";
+		public static const LENGTH:String = "Length";
+		public static const PRESSURE:String = "Pressure";
+		public static const SPEED:String = "Speed";
+		public static const TEMPERATURE:String = "Temperature";
+		public static const TIME:String = "Time";
+		public static const VOLUME:String = "Volume";
+		public static const WEIGHT:String = "Weight";
+		
 		private static var _areaData:ArrayCollection;
 		private static var _cookingData:ArrayCollection;
 		private static var _currencyData:ArrayCollection;
@@ -14,6 +25,48 @@ package objects
 		private static var _timeData:ArrayCollection;
 		private static var _volumeData:ArrayCollection;
 		private static var _weightData:ArrayCollection;
+		
+		public static function getCategories():ArrayCollection {
+			return new ArrayCollection([
+				AREA, 
+				COOKING, 
+				CURRENCY, 
+				LENGTH, 
+				PRESSURE, 
+				SPEED, 
+				TEMPERATURE, 
+				TIME, 
+				VOLUME, 
+				WEIGHT
+			]);
+		}
+		
+		public static function getUnits(type:String):ArrayCollection {
+			switch (type) {
+				case (AREA):
+					return areaData;
+				case (COOKING):
+					return cookingData;
+				case (CURRENCY):
+					return currencyData;
+				case (LENGTH): 
+					return lengthData;
+				case (PRESSURE):
+					return pressureData;
+				case(SPEED):
+					return speedData;
+				case (TEMPERATURE):
+					return temperatureData;
+				case (TIME):
+					return timeData;
+				case (VOLUME):
+					return volumeData;
+				case (WEIGHT):
+					return weightData;
+				default:
+					return null;
+			}
+		}
 
 		public static function get areaData():ArrayCollection {
 			if (_areaData == null) {
@@ -80,9 +133,7 @@ package objects
 		
 		public static function get currencyData():ArrayCollection {
 			if (_currencyData == null) {
-				_currencyData = new ArrayCollection([
-					new Unit("Loading Data", 0)
-				]);
+				_currencyData = Data.getCurrencyData();
 			}
 			
 			return _currencyData;

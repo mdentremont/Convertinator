@@ -48,17 +48,19 @@ private function initializeApp():void {
 	} else if (autoUpdateEnabled) {
 		var lastUpdate:Number = settings.data.lastUpdate;
 		if (isNaN(lastUpdate)) {
-			Data.fetchCurrencyData(false);
+			Data.fetchCurrencyData();
 		} else {
 			var today:Date = new Date();
 			var elapsed:Number = today.getTime() - lastUpdate;
 			
 			// If more than 12 hours have elapsed since the last successful update, perform another
 			if ((elapsed / 1000 / 60 / 60) > 12) {
-				Data.fetchCurrencyData(false);
+				Data.fetchCurrencyData();
 			}
 		}
 	}
+	
+	// Initialize currency data
 	Data.getCurrencyData();
 	
 	numPad.units = unitBar.data;
@@ -75,7 +77,7 @@ private function autoUpdateAlertHandler(event:Event):void {
 		settings.data.autoUpdateEnabled = autoUpdateEnabled;
 		autoUpdateIntervalIndex = 0;
 		settings.data.autoUpdateIntervalIndex = autoUpdateIntervalIndex;
-		Data.fetchCurrencyData(true);
+		Data.fetchCurrencyData();
 	} else {
 		settings.data.autoUpdateSpecified = true;
 		autoUpdateEnabled = false;

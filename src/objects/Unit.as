@@ -1,6 +1,5 @@
 package objects
 {
-	[Bindable]
 	/**
 	 * Units are used to make all the conversions. Each unit is defined
 	 * in relation to the base unit.
@@ -12,6 +11,7 @@ package objects
 	 * All unit categories use this method except for temperatures, which are
 	 * calculated using a formula.
 	 */
+	[Bindable]
 	public class Unit
 	{
 		private var _type:String;
@@ -20,37 +20,9 @@ package objects
 		private var _formula:Function;
 		
 		public function Unit(type:String="", value:Number=1, formula:Function = null) {
-			_type = type;
-			_value = value;
 			_convertedValue = convertedValue;
 			_formula = formula;
-		}
-		
-		public function toString():String {
-			return type;
-		}
-		
-		public function getConvertedValue(input:Number):Number {
-			if (_formula != null) {
-				var convNum:Number = _formula(input * _value);
-				return convNum;
-			}
-			return (input * _value);
-		}
-		
-		public function get type():String {
-			return _type;
-		}
-		
-		public function set type(value:String):void {
-			_type = value;
-		}
-		
-		public function get value():Number {
-			return _value;
-		}
-		
-		public function set value(value:Number):void {
+			_type = type;
 			_value = value;
 		}
 
@@ -62,15 +34,35 @@ package objects
 			_convertedValue = value;
 		}
 
-		public function get formula():Function
-		{
+		public function get formula():Function {
 			return _formula;
 		}
 
-		public function set formula(value:Function):void
-		{
+		public function set formula(value:Function):void {
 			_formula = value;
-		}
+		}		
 
+		public function getConvertedValue(input:Number):Number {
+			if (_formula != null) {
+				var convertedNumber:Number = _formula(input * _value);
+				return convertedNumber;
+			}
+			return (input * _value);
+		}
+		
+		public function get type():String {
+			return _type;
+		}
+		
+		public function set type(value:String):void {
+			_type = value;
+		}	
+		public function get value():Number {
+			return _value;
+		}
+		
+		public function set value(value:Number):void {
+			_value = value;
+		}
 	}
 }

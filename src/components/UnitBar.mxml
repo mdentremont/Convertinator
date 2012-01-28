@@ -15,6 +15,7 @@
 			import mx.collections.ArrayCollection;
 			
 			import objects.Data;
+			import objects.UnitData;
 			
 			import spark.events.IndexChangeEvent;
 			[Bindable]
@@ -34,14 +35,14 @@
 			private function updateData():void {
 				var category:String = tabBar.selectedItem;
 				
-				data.list = ArrayCollection(Data.categories[category]).list;
+				data.list = UnitData.getUnits(category).list;
 			}
 		]]>
 	</fx:Script>
 	
 	<s:ButtonBar id="tabBar"
 				 change="tabBarClickHandler(event)"
-				 dataProvider="{Data.getKeys()}"
+				 dataProvider="{UnitData.getCategories()}"
 				 height="100%"
 				 requireSelection="true"
 				 selectedIndex="0"

@@ -70,11 +70,12 @@
 				var popup:PopupList = new PopupList;
 				popup.align = DialogAlign.CENTER;
 				popup.title = "Choose New Base Unit";
-				var a:Array = new Array();
+				
+				var arr:Array = new Array();
 				for each (var u:Unit in units) {
-					a.push(u.type);
+					arr.push(u.type);
 				}
-				popup.items = a;
+				popup.items = arr;
 				
 				var selected:Array = new Array();
 				selected.push(selectedIndex);
