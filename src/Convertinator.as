@@ -135,5 +135,5 @@ private function convertedLabelFunction(item:Object, column:GridColumn):String {
 }
 
 private function showOptionsScreen(event:Event):void {
-	pnl.visible = true;
+	panel.visible = true;
 }
