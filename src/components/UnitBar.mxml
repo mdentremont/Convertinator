@@ -3,8 +3,10 @@
 		  xmlns:s="library://ns.adobe.com/flex/spark" 
 		  xmlns:mx="library://ns.adobe.com/flex/mx"
 		  xmlns:objects="objects.*"
-		  width="100%" height="75"
-		  creationComplete="updateData()">
+		  creationComplete="updateData()"
+		  height="75"
+		  width="100%"
+		  >
 	<fx:Metadata>
 		[Event(name="change", type="spark.events.IndexChangeEvent")]
 	</fx:Metadata>
@@ -18,21 +20,31 @@
 			[Bindable]
 			public var data:ArrayCollection = new ArrayCollection();
 			
+			/**
+			 * On a tab bar click we need update for the newly selected category.
+			 */
+			private function tabBarClickHandler(event:IndexChangeEvent):void {
+				updateData();
+				dispatchEvent(event);
+			}
+
+			/**
+			 * Swap out the data grid's units with the units specific to the new selection.
+			 */
 			private function updateData():void {
 				var category:String = tabBar.selectedItem;
 				
 				data.list = ArrayCollection(Data.categories[category]).list;
 			}
-			
-			private function tabBarClickHandler(event:IndexChangeEvent):void {
-				updateData();
-				dispatchEvent(event);
-			}
 		]]>
 	</fx:Script>
 	
-	<fx:Declarations>
-		<!-- Place non-visual elements (e.g., services, value objects) here -->
-	</fx:Declarations>
-	<s:ButtonBar id="tabBar" dataProvider="{Data.getKeys()}" selectedIndex="0" height="100%" width="100%" change="tabBarClickHandler(event)" requireSelection="true"/>
+	<s:ButtonBar id="tabBar"
+				 change="tabBarClickHandler(event)"
+				 dataProvider="{Data.getKeys()}"
+				 height="100%"
+				 requireSelection="true"
+				 selectedIndex="0"
+				 width="100%"
+				 />
 </s:VGroup>
