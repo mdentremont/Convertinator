@@ -1,0 +1,3 @@
+Copyright 2010-2012 Matt d'Entremont
+Project is licensed under the LGPL and can be found at: http://github.com/v17al/Convertinator/
+Currency data is retrieved from: http://themoneyconverter.com/USD/rss.xml
