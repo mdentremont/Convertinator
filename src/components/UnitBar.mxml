@@ -22,7 +22,7 @@
 		  xmlns:s="library://ns.adobe.com/flex/spark" 
 		  xmlns:mx="library://ns.adobe.com/flex/mx"
 		  xmlns:objects="objects.*"
-		  creationComplete="updateData()"
+		  creationComplete="updateDataGridData()"
 		  height="75"
 		  width="100%"
 		  >
@@ -33,25 +33,31 @@
 		<![CDATA[
 			import mx.collections.ArrayCollection;
 			
-			import objects.Data;
 			import objects.UnitData;
 			
 			import spark.events.IndexChangeEvent;
+			
+			/*
+			 * The DataGrid is backed by this ArrayCollection..
+			 *
+			 * TODO: Convert this disaster to use MVC (throughout app)
+			 */
 			[Bindable]
 			public var data:ArrayCollection = new ArrayCollection();
 			
 			/**
-			 * On a tab bar click we need update for the newly selected category.
+			 * On a tab bar click we need to update for the newly selected category.
 			 */
 			private function tabBarClickHandler(event:IndexChangeEvent):void {
-				updateData();
+				updateDataGridData();
+				
 				dispatchEvent(event);
 			}
 
 			/**
 			 * Swap out the data grid's units with the units specific to the new selection.
 			 */
-			private function updateData():void {
+			private function updateDataGridData():void {
 				var category:String = tabBar.selectedItem;
 				
 				data.list = UnitData.getUnits(category).list;

@@ -28,8 +28,6 @@ package components
 	
 	import mx.effects.Tween;
 	
-	import qnx.events.QNXApplicationEvent;
-	import qnx.system.QNXApplication;
 	import qnx.ui.core.Container;
 	import qnx.ui.core.ContainerFlow;
 	import qnx.ui.core.Containment;

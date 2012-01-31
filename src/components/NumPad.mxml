@@ -41,12 +41,11 @@
 			import qnx.dialog.PopupList;
 			import qnx.display.IowWindow;
 			
-			import spark.components.List;
-			
 			[Bindable]
 			public var _textBoxText:String = "";
-			private var _units:ArrayCollection;
+			
 			private var _selectedIndex:int;
+			private var _units:ArrayCollection;
 
 			private function keyPressedHandler(event:NumpadEvent):void {
 				if (event.key == "") {
