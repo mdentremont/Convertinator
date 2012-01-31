@@ -27,9 +27,9 @@
         </excludedEntries>
       </libraryPathEntry>
       <libraryPathEntry kind="1" linkType="1" path="libs"/>
-      <libraryPathEntry kind="3" linkType="1" path="${BLACKBERRY_TABLET_SDK}/frameworks/libs/air/qnx-air.swc" useDefaultLinkType="true"/>
       <libraryPathEntry kind="3" linkType="1" path="${BLACKBERRY_TABLET_SDK}/frameworks/libs/blackberry/blackberry.swc" useDefaultLinkType="false"/>
       <libraryPathEntry kind="3" linkType="1" path="${BLACKBERRY_TABLET_SDK}/frameworks/libs/qnx-screen/qnx-screen.swc" useDefaultLinkType="false"/>
+      <libraryPathEntry kind="3" linkType="2" path="${BLACKBERRY_TABLET_SDK}/frameworks/libs/air/qnx-air.swc" useDefaultLinkType="false"/>
     </libraryPath>
     <sourceAttachmentPath/>
   </compiler>
@@ -43,7 +43,7 @@
   <flashCatalyst validateFlashCatalystCompatibility="false"/>
   <buildTargets>
     <buildTarget buildTargetName="com.qnx.flexide.multiplatform.qnx.platform" extraPackagingOptions="" signBarFile="false">
-      <airSettings airCertificatePath="" airTimestamp="true" anePathSet="false" version="1">
+      <airSettings airCertificatePath="" airTimestamp="true" anePathSet="true" version="1">
         <airExcludes/>
         <anePaths/>
       </airSettings>
