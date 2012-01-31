@@ -67,7 +67,7 @@
 	
 	<s:ButtonBar id="tabBar"
 				 change="tabBarClickHandler(event)"
-				 dataProvider="{UnitData.getCategories()}"
+				 dataProvider="{UnitData.categories}"
 				 height="100%"
 				 requireSelection="true"
 				 selectedIndex="0"

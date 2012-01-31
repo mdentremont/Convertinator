@@ -47,20 +47,19 @@ package objects
 		private static var _volumeData:ArrayCollection;
 		private static var _weightData:ArrayCollection;
 		
-		public static function getCategories():ArrayCollection {
-			return new ArrayCollection([
-				AREA, 
-				COOKING, 
-				CURRENCY, 
-				LENGTH, 
-				PRESSURE, 
-				SPEED, 
-				TEMPERATURE, 
-				TIME, 
-				VOLUME, 
-				WEIGHT
-			]);
-		}
+		// TODO: Fix annoying bind warning
+		public static const categories:ArrayCollection = new ArrayCollection([
+			AREA, 
+			COOKING, 
+			CURRENCY, 
+			LENGTH, 
+			PRESSURE, 
+			SPEED, 
+			TEMPERATURE, 
+			TIME, 
+			VOLUME, 
+			WEIGHT
+		]);
 		
 		public static function getUnits(type:String):ArrayCollection {
 			switch (type) {
@@ -154,7 +153,7 @@ package objects
 		
 		public static function get currencyData():ArrayCollection {
 			if (_currencyData == null) {
-				_currencyData = Data.getCurrencyData();
+				_currencyData = Data.currencyData;
 			}
 			
 			return _currencyData;

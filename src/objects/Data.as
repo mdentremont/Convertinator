@@ -21,28 +21,37 @@
 
 package objects
 {
-	import flash.events.Event;
 	import flash.net.SharedObject;
 	
 	import mx.collections.ArrayCollection;
-	import mx.rpc.events.FaultEvent;
-	import mx.rpc.events.ResultEvent;
-	import mx.rpc.http.HTTPService;
 	import mx.utils.StringUtil;
-	
-	import qnx.dialog.AlertDialog;
-	import qnx.display.IowWindow;
 	
 	public class Data
 	{
+		private static const APP_NAME:String = "Convertinator";
+		public static const CURRENCY_UPDATE_INTERVAL:int = 12;
+		
+		private static var _appSettings:SharedObject = SharedObject.getLocal(APP_NAME);
 		private static var _categories:Object;
 
-		public static function getCurrencyData():ArrayCollection {
-			var settings:SharedObject = SharedObject.getLocal(Convertinator.APP_NAME);
-			
+		public static function get appSettings():SharedObject {
+			return _appSettings;
+		}
+		
+		/**
+		 * Returns the currency data. 
+		 * 
+		 * If auto-updating is enabled and the data been previously been
+		 * fetched, this data will be stored in the App's
+		 * shared object storage.
+		 * 
+		 * Otherwise we can pull pre-packaged currency data from the included
+		 * XML file.
+		 */
+		public static function get currencyData():ArrayCollection {
 			var currencyData:ArrayCollection = new ArrayCollection();
-			if (settings.data.currencyData != null) {
-				var tmpCurrencyData:ArrayCollection = settings.data.currencyData;
+			if (_appSettings.data.currencyData != null) {
+				var tmpCurrencyData:ArrayCollection = _appSettings.data.currencyData;
 
 				for (var i:int = 0; i < tmpCurrencyData.length; i++) {
 					var type:String = tmpCurrencyData[i].type;
@@ -73,46 +82,25 @@ package objects
 			return currencyData;
 		}
 		
-		/**
-		 * Only show the dialog if the update was user initiated
-		 */
-		public static function fetchCurrencyData():void {
-			var xmlData:HTTPService = new HTTPService();
-			var call:Object;
-			xmlData.url = "http://themoneyconverter.com/USD/rss.xml";
-			xmlData.resultFormat = "e4x";
-			
-			xmlData.addEventListener("result", httpSuccess);
-			
-			xmlData.send();
+		public static function get currencyUpdateEnabled():Boolean {
+			return _appSettings.data.currencyUpdateEnabled;
 		}
 		
-		private static function httpSuccess(event:ResultEvent):void {
-			var xml:XML = event.result as XML;
-			
-			var currencyData:ArrayCollection = new ArrayCollection();
-			
-			var baseUnit:String = xml.channel.title;
-			baseUnit = StringUtil.trim(baseUnit.replace("Exchange Rates For ", ""));
-			
-			currencyData.addItem(new Unit(baseUnit, 1));
-			for each(var item:XML in xml.channel.elements("item")) {
-				var description:String = item.description;
-				var obj:Array = description.split(" = ");
-				description = obj[1];
-				var rate:Number = Number(description.match(/\d+(.\d+)?/)[0]);
-				var currency:String = StringUtil.trim(description.substr(description.indexOf(" ")));
-				currencyData.addItem(new Unit(currency, rate));
-			}
-			
-			var settings:SharedObject = SharedObject.getLocal(Convertinator.APP_NAME);
-			var lastUpdate:Date = new Date();
-			settings.data.lastUpdate = lastUpdate.getTime();
-			settings.data.currencyData = currencyData;
-			
-			UnitData.currencyData = currencyData;
-			
-			getCurrencyData();
+		public static function set currencyUpdateEnabled(value:Boolean):void {
+			_appSettings.data.currencyUpdateEnabled = value;
+		}
+		
+		public static function get currencyUpdateSpecified():Boolean {
+			return _appSettings.data.currencyUpdateSpecified;
+		}
+		
+		public static function set currencyUpdateSpecified(value:Boolean):void {
+			_appSettings.data.currencyUpdateSpecified = value;
+		}
+		
+		public static function get lastCurrencyUpdate():Number {
+			return _appSettings.data.lastCurrencyUpdate;
 		}
 	}
 }
+
