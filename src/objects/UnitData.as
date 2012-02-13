@@ -28,6 +28,7 @@ package objects
 		public static const AREA:String = "Area";
 		public static const COOKING:String = "Cooking";
 		public static const CURRENCY:String = "Currency";
+		public static const ENERGY:String = "Energy";
 		public static const LENGTH:String = "Length";
 		public static const PRESSURE:String = "Pressure";
 		public static const SPEED:String = "Speed";
@@ -39,6 +40,7 @@ package objects
 		private static var _areaData:ArrayCollection;
 		private static var _cookingData:ArrayCollection;
 		private static var _currencyData:ArrayCollection;
+		private static var _energyData:ArrayCollection;
 		private static var _lengthData:ArrayCollection;
 		private static var _pressureData:ArrayCollection;
 		private static var _speedData:ArrayCollection;
@@ -49,14 +51,15 @@ package objects
 		
 		// TODO: Fix annoying bind warning
 		public static const categories:ArrayCollection = new ArrayCollection([
-			AREA, 
-			COOKING, 
+			AREA,
+			COOKING,
 			CURRENCY, 
-			LENGTH, 
-			PRESSURE, 
-			SPEED, 
+			ENERGY, 
+			LENGTH,
+			PRESSURE,
+			SPEED,
 			TEMPERATURE, 
-			TIME, 
+			TIME,
 			VOLUME, 
 			WEIGHT
 		]);
@@ -69,6 +72,8 @@ package objects
 					return cookingData;
 				case (CURRENCY):
 					return currencyData;
+				case (ENERGY): 
+					return energyData;
 				case (LENGTH): 
 					return lengthData;
 				case (PRESSURE):
@@ -157,6 +162,42 @@ package objects
 			}
 			
 			return _currencyData;
+		}
+		
+		public static function get energyData():ArrayCollection {
+			if (_energyData == null) {
+				_energyData = new ArrayCollection([
+					new Unit("Joule" , 1),
+					new Unit("Kilojoule" , .001),
+					new Unit("Megajoule" , .000001),
+					new Unit("Gigajoule" , .000000001),
+					new Unit("Terajoule" , .000000000001),
+					new Unit("Calorie (4°C)" , .23786869647954329210275927687916),
+					new Unit("Calorie (15°C)" , .23892008123282761916139051487278),
+					new Unit("Calorie (20°C)" , .23912003825920612147297943567671),
+					new Unit("Calorie (Mean)" , .23866348448687350835322195704057),
+					new Unit("Calorie (th)" , .23900573613766730401529636711281),
+					new Unit("Kilocalorie (th)", .00023900573613766730401529636711281),
+					new Unit("Electron Volt", 6.24150974 * Math.pow(10, 18)),
+					new Unit("Kiloelectron Volt" , 6.24150974 * Math.pow(10, 15)),
+					new Unit("Megaelectron Volt" , 6.24150974 * Math.pow(10, 12)),
+					new Unit("Watt Hour", .000277778),
+					new Unit("Kilowatt Hour", .000000277778),
+					new Unit("Megawatt Hour", .000000000277778),
+					new Unit("British Thermal Unit" , .00094781712),
+					new Unit("Foot-pounds Force", .737562149),
+					new Unit("Foot-poundals", 23.73036040423193694447176339386),
+					new Unit("Erg" , 10000000),
+					new Unit("Litre-atmosphere", .009869232667160128),
+					new Unit("Foe", Math.pow(10, -44)),
+					new Unit("Gram of TNT", 0.00023900573613766730401529636711),
+					new Unit("Kilogram of TNT", 0.00000023900573613766730401529636),
+					new Unit("Tonne of TNT", 0.00000000023900573613766730401529),
+					new Unit("Chuck Norris Equivalent", Math.pow(10, -55))
+				]);
+			}
+			
+			return _energyData;
 		}
 		
 		public static function get lengthData():ArrayCollection {
