@@ -98,7 +98,7 @@ package objects
 					new Unit("Square Decimeter", 100),
 					new Unit("Square Centimeter", 10000),
 					new Unit("Square Millimeter", 1000000),
-					new Unit("Square Mile", Math.pow(13.86102159, -7)),
+					new Unit("Square Mile", 3.86102159 * Math.pow(10, -7)),
 					new Unit("Square Yard", 1.19599005),
 					new Unit("Square Foot", 10.7639104),
 					new Unit("Square Inch", 1550.0031),
@@ -336,7 +336,7 @@ package objects
 					new Unit("Cubic Decimeter", 1000),
 					new Unit("Cubic Centimeter", 1000000),
 					new Unit("Cubic Millimeter", 1000000000),
-					new Unit("Cubic Mile", Math.pow(12.39912759, -10)),
+					new Unit("Cubic Mile", 2.39912759 * Math.pow(10, -10)),
 					new Unit("Cubic Yard", 1.30795062),
 					new Unit("Cubic Foot", 35.3146667),
 					new Unit("Cubic Inch", 61023.7441),
@@ -360,6 +360,7 @@ package objects
 					new Unit("Pint (UK)", 1759.75326),
 					new Unit("Gill (US)", 8453.505),
 					new Unit("Gill (UK)", 7039.01304),
+					new Unit("Bushel", 28.3775918),
 				]);
 			}
 			
